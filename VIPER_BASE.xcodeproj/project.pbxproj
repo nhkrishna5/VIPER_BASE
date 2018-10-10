@@ -22,6 +22,12 @@
 		08A9B3582163A0EE009AA901 /* VB_ModuleOne_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A9B3572163A0ED009AA901 /* VB_ModuleOne_VC.swift */; };
 		08A9B35A2163AC38009AA901 /* VB_ModuleOne_Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A9B3592163AC38009AA901 /* VB_ModuleOne_Router.swift */; };
 		08A9B35C2163CF21009AA901 /* VB_WebService_GET.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A9B35B2163CF21009AA901 /* VB_WebService_GET.swift */; };
+		08D64F76216E7AF40033550B /* VB_ModuleTwo_Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D64F6B216E7AF40033550B /* VB_ModuleTwo_Entity.swift */; };
+		08D64F77216E7AF40033550B /* VB_ModuleTwo_Presen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D64F6D216E7AF40033550B /* VB_ModuleTwo_Presen.swift */; };
+		08D64F78216E7AF40033550B /* VB_ModuleTwo_Protoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D64F6F216E7AF40033550B /* VB_ModuleTwo_Protoc.swift */; };
+		08D64F79216E7AF40033550B /* VB_ModuleTwo_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D64F71216E7AF40033550B /* VB_ModuleTwo_VC.swift */; };
+		08D64F7A216E7AF40033550B /* VB_ModuleTwo_Interac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D64F73216E7AF40033550B /* VB_ModuleTwo_Interac.swift */; };
+		08D64F7B216E7AF40033550B /* VB_ModuleTwo_Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D64F75216E7AF40033550B /* VB_ModuleTwo_Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +60,12 @@
 		08A9B3572163A0ED009AA901 /* VB_ModuleOne_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VB_ModuleOne_VC.swift; sourceTree = "<group>"; };
 		08A9B3592163AC38009AA901 /* VB_ModuleOne_Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VB_ModuleOne_Router.swift; sourceTree = "<group>"; };
 		08A9B35B2163CF21009AA901 /* VB_WebService_GET.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VB_WebService_GET.swift; sourceTree = "<group>"; };
+		08D64F6B216E7AF40033550B /* VB_ModuleTwo_Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VB_ModuleTwo_Entity.swift; sourceTree = "<group>"; };
+		08D64F6D216E7AF40033550B /* VB_ModuleTwo_Presen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VB_ModuleTwo_Presen.swift; sourceTree = "<group>"; };
+		08D64F6F216E7AF40033550B /* VB_ModuleTwo_Protoc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VB_ModuleTwo_Protoc.swift; sourceTree = "<group>"; };
+		08D64F71216E7AF40033550B /* VB_ModuleTwo_VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VB_ModuleTwo_VC.swift; sourceTree = "<group>"; };
+		08D64F73216E7AF40033550B /* VB_ModuleTwo_Interac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VB_ModuleTwo_Interac.swift; sourceTree = "<group>"; };
+		08D64F75216E7AF40033550B /* VB_ModuleTwo_Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VB_ModuleTwo_Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +110,7 @@
 				08A9B3222163751A009AA901 /* AppDelegate.swift */,
 				08A9B3242163751A009AA901 /* ViewController.swift */,
 				08A9B34521637AAE009AA901 /* Module_One */,
+				08D64F69216E7AF40033550B /* Module_Two */,
 				08A9B34B21637AAE009AA901 /* Utility */,
 				08A9B3262163751A009AA901 /* Main.storyboard */,
 				08A9B32C2163751D009AA901 /* Assets.xcassets */,
@@ -185,6 +198,67 @@
 				08A9B34F21637CCC009AA901 /* VB_ModuleOne_Protoc.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		08D64F69216E7AF40033550B /* Module_Two */ = {
+			isa = PBXGroup;
+			children = (
+				08D64F6A216E7AF40033550B /* Entity */,
+				08D64F6C216E7AF40033550B /* Presenter */,
+				08D64F6E216E7AF40033550B /* Protocol */,
+				08D64F70216E7AF40033550B /* View */,
+				08D64F72216E7AF40033550B /* Intractor */,
+				08D64F74216E7AF40033550B /* Router */,
+			);
+			path = Module_Two;
+			sourceTree = "<group>";
+		};
+		08D64F6A216E7AF40033550B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				08D64F6B216E7AF40033550B /* VB_ModuleTwo_Entity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		08D64F6C216E7AF40033550B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				08D64F6D216E7AF40033550B /* VB_ModuleTwo_Presen.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		08D64F6E216E7AF40033550B /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				08D64F6F216E7AF40033550B /* VB_ModuleTwo_Protoc.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		08D64F70216E7AF40033550B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				08D64F71216E7AF40033550B /* VB_ModuleTwo_VC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		08D64F72216E7AF40033550B /* Intractor */ = {
+			isa = PBXGroup;
+			children = (
+				08D64F73216E7AF40033550B /* VB_ModuleTwo_Interac.swift */,
+			);
+			path = Intractor;
+			sourceTree = "<group>";
+		};
+		08D64F74216E7AF40033550B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				08D64F75216E7AF40033550B /* VB_ModuleTwo_Router.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,16 +363,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				08A9B32B2163751A009AA901 /* VIPER_BASE.xcdatamodeld in Sources */,
+				08D64F7A216E7AF40033550B /* VB_ModuleTwo_Interac.swift in Sources */,
 				08A9B3252163751A009AA901 /* ViewController.swift in Sources */,
 				08A9B3232163751A009AA901 /* AppDelegate.swift in Sources */,
 				08A9B35221638CE1009AA901 /* VB_ModuleOne_Presen.swift in Sources */,
 				08A9B34D21637AD3009AA901 /* Constant.swift in Sources */,
+				08D64F77216E7AF40033550B /* VB_ModuleTwo_Presen.swift in Sources */,
 				08A9B35A2163AC38009AA901 /* VB_ModuleOne_Router.swift in Sources */,
 				08A9B35021637CCC009AA901 /* VB_ModuleOne_Protoc.swift in Sources */,
 				08A9B35C2163CF21009AA901 /* VB_WebService_GET.swift in Sources */,
+				08D64F7B216E7AF40033550B /* VB_ModuleTwo_Router.swift in Sources */,
 				08A9B3582163A0EE009AA901 /* VB_ModuleOne_VC.swift in Sources */,
 				08A9B35421638EDF009AA901 /* VB_ModuleOne_Interac.swift in Sources */,
 				08A9B35621639470009AA901 /* VB_ModuleOne_Entity.swift in Sources */,
+				08D64F76216E7AF40033550B /* VB_ModuleTwo_Entity.swift in Sources */,
+				08D64F78216E7AF40033550B /* VB_ModuleTwo_Protoc.swift in Sources */,
+				08D64F79216E7AF40033550B /* VB_ModuleTwo_VC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

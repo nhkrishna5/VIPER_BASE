@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class VB_ModuleOne_Presen: ViewToPresenterProtocol {
+class VB_ModuleTwo_Presen: ViewToPresenterProtocol {
     var view: PresenterToViewProtocol?
     
     var interactor: PresenterToInteractorProtocol?

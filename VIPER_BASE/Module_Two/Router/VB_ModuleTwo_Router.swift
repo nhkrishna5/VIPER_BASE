@@ -16,11 +16,11 @@ class VB_ModuleOne_Router: PresenterToRouterProtocol {
     }
     
     static func createModule() -> UIViewController {
-        let vc = mainStoryBoard.instantiateViewController(withIdentifier: SB_Identifier.shared.VB_ModuleOne_VC) as! VB_ModuleOne_VC
+        let vc = mainStoryBoard.instantiateViewController(withIdentifier: SB_Identifier.shared.VB_ModuleOne_VC) as! VB_ModuleTwo_VC
         
-        let presenter: ViewToPresenterProtocol & InteractorToPresenterProtocol = VB_ModuleOne_Presen()
-        let interactor: PresenterToInteractorProtocol = VB_ModuleOne_Interac()
-        let router: PresenterToRouterProtocol = VB_ModuleOne_Router()
+        let presenter: ViewToPresenterProtocol & InteractorToPresenterProtocol = VB_ModuleTwo_Presen()
+        let interactor: PresenterToInteractorProtocol = VB_ModuleTwo_Interac()
+        let router: PresenterToRouterProtocol = VB_ModuleTwo_Router()
         
         vc.presenter = presenter
         presenter.view = vc

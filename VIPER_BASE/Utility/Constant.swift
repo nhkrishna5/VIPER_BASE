@@ -27,10 +27,13 @@ struct Keys_Str {
 struct CellIdentifier {
     static let shared = CellIdentifier()
     let VB_ModuleOne_Cell = "VB_ModuleOne_Cell"
+    let VB_ModuleTwo_Cell = "VB_ModuleTwo_Cell"
+
 }
 
 struct SB_Identifier {
     static let shared = SB_Identifier()
     let VB_ModuleOne_VC = "VB_ModuleOne_VC"
-    
+    let VB_ModuleTwo_VC = "VB_ModuleTwo_VC"
+
 }
