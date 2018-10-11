@@ -8,12 +8,12 @@
 
 import UIKit
 
-class VB_ModuleOne_VC: UIViewController {
+class VB_ModuleTwo_VC: UIViewController {
 
     
     @IBOutlet weak var table_moduleTwo: UITableView!
     var ary_movieList = [MovieList]()
-    var presenter: ViewToPresenterProtocol?
+    var presenter: ViewToPresenterProtocol_two?
     
     
     override func viewDidLoad() {
@@ -37,7 +37,7 @@ class VB_ModuleOne_VC: UIViewController {
 
 }
 
-extension VB_ModuleOne_VC: UITableViewDelegate, UITableViewDataSource{
+extension VB_ModuleTwo_VC: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
@@ -48,9 +48,11 @@ extension VB_ModuleOne_VC: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = table_moduleTwo.dequeueReusableCell(withIdentifier: CellIdentifier.shared.VB_ModuleTwo_Cell, for: indexPath) as! VB_ModuleTwoCell
+
+        
         let dicVal = ary_movieList[indexPath.row]
         
-        cell.lbl_t1.text = dicVal.id
+        cell.lbl_t1.text = "\(dicVal.id)" 
         cell.lbl_t2.text = dicVal.title
         cell.lbl_t3.text = dicVal.brief
         
@@ -61,7 +63,7 @@ extension VB_ModuleOne_VC: UITableViewDelegate, UITableViewDataSource{
 }
 
 
-extension VB_ModuleTwo_VC: PresenterToViewProtocol{
+extension VB_ModuleTwo_VC: PresenterToViewProtocol_two{
     func passResponseObject<T>(array_obj: Array<T>) {
         for item in array_obj {
             ary_movieList.append(MovieList(dicVal: item as! Dictionary<String, Any>))

@@ -89,10 +89,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--Module TwoVC-->
         <scene sceneID="Sws-7N-hPf">
             <objects>
-                <viewController id="33S-LQ-ElA" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VB_ModuleTwo_VC" id="33S-LQ-ElA" customClass="VB_ModuleTwo_VC" customModule="VIPER_BASE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Su-bB-F80">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,7 +102,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VB_ModuleTwo_Cell" rowHeight="100" id="4tP-3N-a0S" customClass="VB_ModuleTwoCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VB_ModuleTwo_Cell" rowHeight="100" id="4tP-3N-a0S" customClass="VB_ModuleTwoCell" customModule="VIPER_BASE" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4tP-3N-a0S" id="t9E-eI-4DH">
@@ -132,13 +132,25 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lbl_t1" destination="Oj3-J5-gTs" id="we3-Yx-IcG"/>
+                                            <outlet property="lbl_t2" destination="ahz-Oa-qtY" id="0yJ-dI-Nxt"/>
+                                            <outlet property="lbl_t3" destination="oPB-GJ-5q3" id="hRA-8F-urV"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="33S-LQ-ElA" id="h7t-gy-wQM"/>
+                                    <outlet property="delegate" destination="33S-LQ-ElA" id="vAd-5f-dDL"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="SoU-G2-DI8"/>
                     </view>
+                    <connections>
+                        <outlet property="table_moduleTwo" destination="Zxl-C9-omw" id="c1O-zm-2gw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ilw-ci-iGk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

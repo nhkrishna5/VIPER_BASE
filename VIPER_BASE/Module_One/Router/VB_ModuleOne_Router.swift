@@ -31,8 +31,8 @@ class VB_ModuleOne_Router: PresenterToRouterProtocol {
     }
     
     func pushToNewVC(navigationController: UINavigationController) {
-        
-       // navigationController.present(vc, animated: true, completion: nil)
+        let vc = VB_ModuleTwo_Router.createModule()
+        navigationController.present(vc, animated: true, completion: nil)
     }
     
     

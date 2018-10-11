@@ -17,11 +17,14 @@ struct Keys_Str {
     static let shared = Keys_Str()
     
     var notice_list = "notice_list"
-    
+    var movie_list = "movie_list"
+
     var id = "id"
     var title = "title"
     var brief = "brief"
     var filesource = "filesource"
+    var image_url = "image_url"
+    
 }
 
 struct CellIdentifier {

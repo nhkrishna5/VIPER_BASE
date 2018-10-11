@@ -9,15 +9,15 @@
 import Foundation
 import UIKit
 
-class VB_ModuleTwo_Presen: ViewToPresenterProtocol {
-    var view: PresenterToViewProtocol?
+class VB_ModuleTwo_Presen: ViewToPresenterProtocol_two {
+    var view: PresenterToViewProtocol_two?
     
-    var interactor: PresenterToInteractorProtocol?
+    var interactor: PresenterToInteractorProtocol_two?
     
-    var router: PresenterToRouterProtocol?
+    var router: PresenterToRouterProtocol_two?
     
     func startFetchingData() {
-        interactor?.fetchData(str_url: str_Api_Notice)
+        interactor?.fetchData(str_url: str_Api_Movie)
     }
     
     func showViewController(navigationController: UINavigationController) {
@@ -27,7 +27,7 @@ class VB_ModuleTwo_Presen: ViewToPresenterProtocol {
     
 }
 
-extension VB_ModuleOne_Presen: InteractorToPresenterProtocol {
+extension VB_ModuleTwo_Presen: InteractorToPresenterProtocol_two {
     func onSuccess_responseObject<T>(responseObj: Array<T>) {
         view?.passResponseObject(array_obj: responseObj)
 

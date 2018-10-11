@@ -9,8 +9,8 @@
 import UIKit
 import Foundation
 
-class VB_ModuleTwo_Interac: PresenterToInteractorProtocol {
-    var presenter: InteractorToPresenterProtocol?
+class VB_ModuleTwo_Interac: PresenterToInteractorProtocol_two {
+    var presenter: InteractorToPresenterProtocol_two?
     let webservice = VB_WebService_Get()
     
     func fetchData(str_url: String) {
@@ -50,7 +50,7 @@ class VB_ModuleTwo_Interac: PresenterToInteractorProtocol {
 
 extension VB_ModuleTwo_Interac: WebServiceGetDelegate{
     func responseObject_Get(responseObj: Dictionary<String, Any>) {
-        let resp_obj = responseObj[Keys_Str.shared.notice_list] as? [Dictionary<String, Any>]
+        let resp_obj = responseObj[Keys_Str.shared.movie_list] as? [Dictionary<String, Any>]
         presenter?.onSuccess_responseObject(responseObj: resp_obj!)
     }
     

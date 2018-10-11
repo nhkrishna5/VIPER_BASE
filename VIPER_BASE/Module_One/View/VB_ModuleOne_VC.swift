@@ -48,6 +48,8 @@ extension VB_ModuleOne_VC: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = table_moduleOne.dequeueReusableCell(withIdentifier: CellIdentifier.shared.VB_ModuleOne_Cell, for: indexPath) as! VB_ModuleOneCell
+
+        
         let dicVal = ary_noticeList[indexPath.row]
         
         cell.lbl_t1.text = dicVal.id
@@ -57,7 +59,10 @@ extension VB_ModuleOne_VC: UITableViewDelegate, UITableViewDataSource{
         
         
         return cell
-        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter?.showViewController(navigationController: navigationController!)
     }
 }
 

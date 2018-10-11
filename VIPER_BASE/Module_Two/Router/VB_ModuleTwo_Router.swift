@@ -9,18 +9,18 @@
 import Foundation
 import UIKit
 
-class VB_ModuleOne_Router: PresenterToRouterProtocol {
+class VB_ModuleTwo_Router: PresenterToRouterProtocol_two {
     
     static var mainStoryBoard: UIStoryboard{
         return UIStoryboard(name: "Main", bundle: .main)
     }
     
     static func createModule() -> UIViewController {
-        let vc = mainStoryBoard.instantiateViewController(withIdentifier: SB_Identifier.shared.VB_ModuleOne_VC) as! VB_ModuleTwo_VC
+        let vc = mainStoryBoard.instantiateViewController(withIdentifier: SB_Identifier.shared.VB_ModuleTwo_VC) as! VB_ModuleTwo_VC
         
-        let presenter: ViewToPresenterProtocol & InteractorToPresenterProtocol = VB_ModuleTwo_Presen()
-        let interactor: PresenterToInteractorProtocol = VB_ModuleTwo_Interac()
-        let router: PresenterToRouterProtocol = VB_ModuleTwo_Router()
+        let presenter: ViewToPresenterProtocol_two & InteractorToPresenterProtocol_two = VB_ModuleTwo_Presen()
+        let interactor: PresenterToInteractorProtocol_two = VB_ModuleTwo_Interac()
+        let router: PresenterToRouterProtocol_two = VB_ModuleTwo_Router()
         
         vc.presenter = presenter
         presenter.view = vc
